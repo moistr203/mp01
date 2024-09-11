@@ -1,1 +1,1 @@
-# moistr203-csc207-mini-project-exercise
+# moistr203-csc207-mini-projects-exercise
