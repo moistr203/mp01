@@ -1,10 +1,16 @@
-# Mini-Project 1: Classical Encryption
+# Classical Encryption Project
 
-**Your Name**: Moise (Moses) Milenge
+**Author**: Moise Milenge
 
-A project for CSC-207 2024Fa.
+This project implements classical encryption techniques such as Caesar cipher and Vigenère cipher. It includes:
+- A utility class `CipherUtils` that provides static methods for encrypting and decrypting text using both ciphers.
+- A command-line utility `AllCaesar` that prints all possible Caesar cipher shifts.
+- Another command-line utility `Cipher` that allows flexible encoding/decoding using either cipher.
 
-This project implements classical encryption techniques including the Caesar cipher and Vigenère cipher. It includes two command-line utilities: `Cipher` for performing encryption/decryption and `AllCaesar` for applying the Caesar cipher with all possible shift values.
+### Resources
+- StackOverflow for debugging tips and syntax guidance.
+- [JUnit Documentation](https://junit.org/junit5/) for unit testing.
+- Course materials and lectures.
 
-Citations
-- [Link to GitHub repository](https://github.com/moistr203/csc207-git-exercise.git)
+### GitHub Repository
+https://github.com/moistr203/csc207-mini-project-1.git

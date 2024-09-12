@@ -2,14 +2,27 @@ package edu.grinnell.csc207.main;
 
 import edu.grinnell.csc207.util.CipherUtils;
 
+/**
+ * A class to perform Caesar and Vigenère cipher encoding and decoding.
+ */
 public class Cipher {
-    public static void main(String[] args) {
+
+    /**
+     * Main method to handle Caesar and Vigenère cipher operations.
+     *
+     * @param args command line arguments
+     */
+    public static void main(final String[] args) {
         if (args.length != 4) {
             System.err.println("Error: Incorrect number of parameters.");
             return;
         }
 
-        String action = null, cipherType = null, str = null, key = null;
+        String action = null;
+        String cipherType = null;
+        String str = null;
+        String key = null;
+
         for (int i = 0; i < args.length; i++) {
             if (args[i].equals("-encode") || args[i].equals("-decode")) {
                 action = args[i].substring(1);
@@ -33,8 +46,8 @@ public class Cipher {
                 return;
             }
             char keyChar = key.charAt(0);
-            String result = action.equals("encode") 
-                ? CipherUtils.caesarEncrypt(str, keyChar) 
+            String result = action.equals("encode")
+                ? CipherUtils.caesarEncrypt(str, keyChar)
                 : CipherUtils.caesarDecrypt(str, keyChar);
             System.out.println(result);
         } else if (cipherType.equals("vigenere")) {
@@ -42,8 +55,8 @@ public class Cipher {
                 System.err.println("Error: Invalid key for Vigenère cipher.");
                 return;
             }
-            String result = action.equals("encode") 
-                ? CipherUtils.vigenereEncrypt(str, key) 
+            String result = action.equals("encode")
+                ? CipherUtils.vigenereEncrypt(str, key)
                 : CipherUtils.vigenereDecrypt(str, key);
             System.out.println(result);
         } else {

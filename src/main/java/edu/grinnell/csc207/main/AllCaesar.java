@@ -2,8 +2,17 @@ package edu.grinnell.csc207.main;
 
 import edu.grinnell.csc207.util.CipherUtils;
 
+/**
+ * A class that provides Caesar cipher encoding and decoding for all possible shifts.
+ */
 public class AllCaesar {
-    public static void main(String[] args) {
+
+    /**
+     * Main method to handle Caesar cipher operations.
+     *
+     * @param args command line arguments
+     */
+    public static void main(final String[] args) {
         if (args.length != 2) {
             System.err.println("Error: Incorrect number of parameters.");
             return;
@@ -23,8 +32,8 @@ public class AllCaesar {
         }
 
         for (char c = 'a'; c <= 'z'; c++) {
-            String result = action.equals("encode") 
-                ? CipherUtils.caesarEncrypt(str, c) 
+            String result = action.equals("encode")
+                ? CipherUtils.caesarEncrypt(str, c)
                 : CipherUtils.caesarDecrypt(str, c);
             System.out.println("n = " + c + ": " + result);
         }
