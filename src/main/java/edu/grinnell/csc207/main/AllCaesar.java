@@ -1,11 +1,23 @@
 package edu.grinnell.csc207.main;
 
 import edu.grinnell.csc207.util.CipherUtils;
-
+/*
+ * Course: CSC-207
+ * Author: Moise Milenge
+ * Description: Utility methods for classical encryption.
+ */
 /**
+ * 
  * A class that provides Caesar cipher encoding and decoding for all possible shifts.
  */
-public class AllCaesar {
+public final class AllCaesar {
+
+    /**
+     * Private constructor to prevent instantiation of utility class.
+     */
+    private AllCaesar() {
+        // Prevent instantiation
+    }
 
     /**
      * Main method to handle Caesar cipher operations.
@@ -39,7 +51,8 @@ public class AllCaesar {
 
         String action = args[0];
         if (!action.equals("encode") && !action.equals("decode")) {
-            System.err.println("Error: Invalid option: \"" + action + "\". Valid options are \"encode\" or \"decode\".");
+            System.err.println("Error: Invalid option: \"" + action 
+                    + "\". Valid options are \"encode\" or \"decode\".");
             return false;
         }
 

@@ -1,9 +1,13 @@
 package edu.grinnell.csc207.util;
-
+/*
+ * Course: CSC-207
+ * Author: Moise Milenge
+ * Description: Utility methods for classical encryption.
+ */
 /**
  * Utility methods for classical encryption.
  */
-public class CipherUtils {
+public final class CipherUtils {
 
     // Constant for alphabet size
     private static final int ALPHABET_SIZE = 26;

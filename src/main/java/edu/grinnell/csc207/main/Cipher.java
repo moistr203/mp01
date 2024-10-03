@@ -1,11 +1,22 @@
 package edu.grinnell.csc207.main;
 
 import edu.grinnell.csc207.util.CipherUtils;
-
+/*
+ * Course: CSC-207
+ * Author: Moise Milenge
+ * Description: Utility methods for classical encryption.
+ */
 /**
  * A class to perform Caesar and Vigenère cipher encoding and decoding.
  */
-public class Cipher {
+public final class Cipher {
+
+    /**
+     * Private constructor to prevent instantiation of utility class.
+     */
+    private Cipher() {
+        // Prevent instantiation
+    }
 
     /**
      * Main method to handle Caesar and Vigenère cipher operations.
