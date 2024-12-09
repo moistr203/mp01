@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 #Sun Dec 08 18:40:52 CST 2024
 configuration*?=9B818A87E055D7CFFFCD99EC112DE77BA709B061
 module-resource*?\:checkstyle-xpath-suppressions.xml=31DE2C185B2C7E453129EFE7EC452B3F9A210BC7
 module-resource*?\:checkstyle-suppressions.xml=DEAF6F6A2D82D7FFBA08BBDD10DE91F35D4D90F7
+=======
+#Mon Oct 07 17:35:30 CDT 2024
+configuration*?=7BE33413C3FCF4ADEE194AA9ECCE7AA32A7D0361
+module-resource*?\:checkstyle-xpath-suppressions.xml=A70F3C6EA2250139DE1D65F5ADFE092E0002D552
+module-resource*?\:checkstyle-suppressions.xml=2C4B2CC56BAD714C18F42A3A0DE30C90CAE1CB4
+>>>>>>> f3cb97a32a167cba1733ad4d606a3d39f915ddfb
